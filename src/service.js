@@ -1,4 +1,4 @@
-import { URLBASE, URLBASEPRINT, usuario, contraseña, usuarioPrint, contraseñaPrint, delay, estados, showToastSwetAlert } from './constants.js'
+import { URLBASE, URLBASEPRINT, delay, estados, showToastSwetAlert } from './constants.js'
 import {contraseña,contraseñaPrint,usuario,usuarioPrint} from './ENV.js';
 
 const credencialesEnBase64 = btoa(usuario + ':' + contraseña);
