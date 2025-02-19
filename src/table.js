@@ -357,6 +357,7 @@ const printTags = async (data) => {
         showToastSwetAlert('Etiquetas impresas correctamente', 'success');
     } catch (error) {
         showToastSwetAlert(`Error al imprimir las etiquetas: ${error}`, 'error', 5000);
+        hideLoadingOverlay();
     }
 }
 
@@ -369,6 +370,7 @@ const printTagsLocal = async (data) => {
         showToastSwetAlert('Etiquetas impresas localmente', 'success');
     } catch (error) {
         showToastSwetAlert(`Error al imprimir las etiquetas: ${error}`, 'error', 5000);
+        hideLoadingOverlay();
     }
 }
 
@@ -380,6 +382,7 @@ const exportExcel = async (id) => {
         jsonToExcel(response, filename);
     } catch (error) {
         showToastSwetAlert(`Error al exportar a Excel: ${error}`, 'error', 5000);
+        hideLoadingOverlay();
     }
 }
 
