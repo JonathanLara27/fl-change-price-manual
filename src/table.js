@@ -365,7 +365,7 @@ const printTagsLocal = async (data) => {
     try {
         showLoadingOverlay();
         const response = await printTAGSText(data.id);
-        await printTAGSLocal(response.text);
+        await printTAGSLocal(response.texto);
         hideLoadingOverlay();
         showToastSwetAlert('Etiquetas impresas localmente', 'success');
     } catch (error) {
