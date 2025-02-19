@@ -118,8 +118,8 @@ const buttonPrintTagsWithEvent = (data, parentElement) => {
 const buttonPrintTagsLocalWithEvent = (data, parentElement) => {
     if(data.estado && data.estado === 'APROBADO'){
         const button = document.createElement('button');
-        button.className = 'btn btn-succes btn-sm d-flex justify-content-center align-items-center';
-        button.title = 'Imprimir etiquetas';
+        button.className = 'btn btn-success btn-sm d-flex justify-content-center align-items-center';
+        button.title = 'Imprimir etiquetas localmente';
         button.innerHTML = `<span class="material-symbols-outlined">print</span>`;
         button.addEventListener('click', () => handleButtonClickPrintTagsLocal(data));
         parentElement.appendChild(button); // Agregar el botón al DOM
