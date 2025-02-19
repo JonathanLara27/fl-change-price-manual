@@ -220,7 +220,7 @@ export const printTAGSLocal = async (texto) => {
         throw new Error('El texto no puede ser nulo.');
     }
     try {
-        const response = await fetch(`localhost:3000/print/etiquetas`, {
+        const response = await fetch(`http://localhost:3000/print/etiquetas`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
